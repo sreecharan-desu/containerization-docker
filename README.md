@@ -1,6 +1,18 @@
-# hello-world-server
-A testing server for the sake of aws deployment
+# containerization-docker
 
+express + mongodb hello-world packaged with a dockerfile and docker compose.
 
-## Consistency & Discipline
-This project is maintained regularly to ensure documentation clarity and code quality. Small, daily improvements are prioritized over large, infrequent updates.
+## stack
+
+express · mongoose · typescript · docker · docker compose
+
+## run locally
+
+```bash
+docker compose up --build        # api on :3000, mongodb on :27017
+npm install && npm run build     # without docker
+```
+
+## env
+
+none. compose sets everything it needs.
